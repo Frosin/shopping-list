@@ -1,7 +1,9 @@
 <?php
 
 echo "Hello world!";
-echo 2 + 7;
+echo "\n";
+echo "2 + 7 = ";
+echo  2 + 7;
 //phpinfo();
 
 
