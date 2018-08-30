@@ -1,3 +1,4 @@
+<?php
 /*
 
 $host = 'localhost';
@@ -35,3 +36,23 @@ $rows = $result->num_rows;
 
 
 */
+
+class db {
+    
+    public $conn;
+
+    public function __construct($host, $user, $pass, $database)
+    {
+        $conn = new mysqli($host, $user, $pass, $database);
+    }
+
+
+
+}
+
+
+
+
+
+
+?>
