@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+.container {
+    background-color: cadetblue;
+    display: inline-block;
+    width: 98%;
+    border: 4px double red;
+    min-width: 350px;
+    min-height: 500px;
+    width: auto;
+}
+
+.today_block {
+    background-color: cornflowerblue;
+    padding: 20px;
+    border: 4px double black;  
+    margin: 20px 0px;  
+}
+
+.button {
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px double black;
+    margin: 20px 0px; 
+    cursor: pointer; 
+}
+.button:hover{
+    background-color: black;
+    border: 4px double white;
+    color: white;
+}
+

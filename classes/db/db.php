@@ -35,7 +35,31 @@ $rows = $result->num_rows;
                 }
 
 
+$message = ""; // Здесь будет храниться наш ответ на все запросы
+
+
+
+function request($query, $conn) { // Возвращает только сообщение
+
+    $result = $conn->query($query);
+       if (!$result) {
+                    return "Fail";
+                        // Здесь запись в лог
+                        // $conn->error
+              }
+                    else {
+                            return "Success";
+                         }         
+}
+
+$message = request("INSERT INTO $tableName $into $values;",$conn);
+request("UPDATE $tableName SET $set WHERE $keyName=$keyValue;",$conn);
+
+
+
 */
+
+//require_once('classes/config.php');
 
 class db {
     
@@ -43,11 +67,41 @@ class db {
 
     public function __construct($host, $user, $pass, $database)
     {
-        $conn = new mysqli($host, $user, $pass, $database);
+        $this->conn = new mysqli($host, $user, $pass, $database);   
+        $this->conn->set_charset("utf8");
+    }
+
+    public function getData($table, $fields, $where)
+    {
+        $request = "SELECT $fields FROM $table WHERE $where;";
+        $result = $this->conn->query($request);
+
+        $data = array();
+        if ($result)
+            while ($row = $result->fetch_assoc()) 
+            {
+                $data[] = $row;
+            }
+
+
+        return $data;
     }
 
 
+    public function getDataByQuery($query)
+    {
+        $result = $this->conn->query($query);
 
+        $data = array();
+        if ($result && is_object($result))
+            while ($row = $result->fetch_assoc()) 
+            {
+                $data[] = $row;
+            }
+
+
+        return $data;        
+    }
 }
 
 

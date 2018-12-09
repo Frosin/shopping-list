@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+.container {
+    background-color: cadetblue;
+    display: inline-block;
+    width: 98%;
+    border: 4px double red;
+    min-width: 350px;
+    min-height: 500px;
+    width: auto;
+    position:relative;
+}
+
+.today_block {
+    background-color: cornflowerblue;
+    padding: 20px;
+    border: 4px double black;  
+    margin: 20px 0px;  
+}
+
+.job_block {
+    margin: 10px 0px;
+    padding: 20px 0px 0px 0px;
+    width: auto;
+    height: 40px;
+    border: 4px double black;
+    border-radius: 6px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.job_block:hover{
+    background-color:mediumspringgreen;
+}
+
+.add_button {
+    font-weight:bold;
+    font-size: 1.8em;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    margin-top: 20px;
+    padding-top:20px;
+    padding: 0px 0px;
+    width: 80px;
+    height: 25px;
+    background-color: forestgreen;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.add_button:hover {
+    background-color:mediumspringgreen;
+    color: black;
+    border: 3px solid black;
+}

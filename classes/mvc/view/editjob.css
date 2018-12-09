@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+.container {
+    background-color: cadetblue;
+    display: inline-block;
+    width: 98%;
+    border: 4px double red;
+    min-width: 350px;
+    min-height: 500px;
+    width: auto;
+    position:relative;
+}
+
+.job_title_block {
+    background-color: darkblue;
+    padding: 20px;
+    border: 4px double khaki;  
+    margin: 20px 0px;  
+    color: khaki;
+    font-weight: bold;
+    position: relative;
+}
+
+.list_item {
+    background-color: moccasin;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: left;
+    position: relative;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+
+.edit_btn {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    border-radius: 8px;
+    border: 4px double black;
+    background-color: tomato;
+    width: 23px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.edit_btn:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.save_btn {
+    font-weight:bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    margin-top: 20px;
+    padding-top:20px;
+    padding: 0px 0px;
+    width: 80px;
+    height: 25px;
+    background-color: forestgreen;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+
+}
+
+.del_btn {
+    font-weight:bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    margin-top: 20px;
+    padding-top:20px;
+    padding: 0px 0px;
+    width: 80px;
+    height: 25px;
+    background-color: firebrick;
+    color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+
+}
+
+.add_btn:hover {
+    background-color:mediumspringgreen;
+    color: black;
+    border: 3px solid black;
+}
+
+.del_btn:hover {
+    background-color:tomato;
+    color: black;
+    border: 3px solid black;
+}
+
+
+
+
+.title_btn {
+    color: black;
+    top: 30%;
+}

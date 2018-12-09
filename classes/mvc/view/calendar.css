@@ -1,31 +1,141 @@
+body {
+    text-align: center;
+    margin: 0px;
+}
 .container {
     background-color: cadetblue;
     display: inline-block;
-    /*width: 600px;*/
-    /*height: 600px;*/
+    min-width: 350px;
+    width: auto;
+    min-height: 500px;
     border: 4px double red;
+    margin:  auto;
+    position: relative;
 }
 
 
 .week_block {
-
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .day_block {
-    background-color: gray;
-    width: 60px;
+    background-color: silver;
+    /*width: 60px; */
+    width: 40px;
     height: 60px;
     border: 1px solid black ;
-    margin: 3px;
+    margin: 1px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.current_month:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.last_month 
+{
+    background-color: gray;
+    cursor: default;
+}
+
+.day_name_block {
+    background-color: cornflowerblue;
+    width: 40px;
+    height: 60px;
+    border: 1px solid black ;
+    margin: 1px 1px 20px 1px;
     display: inline-block;
     position: relative;
 }
 
+.weekend {
+    background-color: coral;
+}
+
+
 .day_label{
-    /*margin: 10px;*/
-    display: inline;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.day_name_label {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.button {
+    /*margin-top: 20px;*/
+    width: 80px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding-top: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+
+.disabled {
+    opacity: 0.1;
+}
+
+.to_home {
     position: absolute;
-    left: 35%;
-    top: 40%;
+    left: 5px;
+    bottom: 5px;
+    margin-top: 20px;
+    padding: 2px 0px;
+    width: 60px;
+    height: 35px;
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid white;
+}
+
+.to_home_link:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.to_home_link {
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    margin-top: 20px;
+    padding-top:20px;
+    padding: 0px 0px;
+    width: 80px;
+    height: 30px;
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
 }

@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+.job_title_block {
+    background-color: darkblue;
+    padding: 20px;
+    border: 4px double khaki;  
+    margin: 20px 0px;  
+    color: khaki;
+    font-weight: bold;
+    position: relative;
+}
+
+.title_block {
+    display: inline-block;
+}
+
+
+.block_item {
+    display: block;
+    margin: 10px 0px;
+}
+
+
+.container {
+    background-color: cadetblue;
+    display: inline-block;
+    width: 98%;
+    border: 4px double red;
+    min-width: 350px;
+    min-height: 500px;
+    width: auto;
+    position:relative;
+}
+
+.save_btn {
+    display: inline-block;
+    border: 2px solid blue;
+}
+
+.back_btn {
+    display: inline-block;
+    border: 2px solid blue;
+}
+
+.btn {
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: midnightblue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
